@@ -1,7 +1,3 @@
-window.onload = (event) => {
-   shoppingCart.style.display = 'none';
- };
-
 let shoppingCartBtn = document.querySelector('.shopping-cart-btn');
 let shoppingCart = document.querySelector('.shopping-cart');
 let triangle = document.querySelector('.triangle');
