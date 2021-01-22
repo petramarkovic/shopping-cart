@@ -1,11 +1,16 @@
 let shoppingCartBtn = document.querySelector('.shopping-cart-btn');
 let shoppingCart = document.querySelector('.shopping-cart');
+let triangle = document.querySelector('.triangle');
 
 shoppingCartBtn.addEventListener('click', ()=> {
     if(shoppingCart.style.display==="none"){
         shoppingCart.style.display="block";
+        shoppingCartBtn.classList.add('active');
+        triangle.style.display = 'block';
      } else {
         shoppingCart.style.display="none";
+        shoppingCartBtn.classList.remove('active');
+        triangle.style.display = 'none';
      }
 } );
 

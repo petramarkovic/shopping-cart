@@ -32,16 +32,38 @@ main {
     width: 86px;
     height: 75px;
     margin-top: 100px;
-    margin-bottom: 27.77px;
     cursor: pointer;
+    margin-bottom: 27px;
 }
 
 .shopping-cart-btn img {
     padding: 20px;
 }
 
-.shopping-cart-btn:focus {
+.active {
     border: 1px solid #000;
+}
+
+.triangle {
+    position: absolute;
+	top: 170px;
+	right: 340px;
+	width: 2em;
+	height: 2em;
+    clip: rect(0, auto, 5em, -2em);
+    transform: rotate(180deg);
+    display: none;
+}
+
+.triangle::after {
+    content: "";
+	display:block;
+	margin: -1em;
+	height: 2em;
+	width: 2em;
+	background: #fff;
+	box-shadow: .3em .3em 1em rgba(0,0,0,0.3);
+	transform: scale(0.8, 1) rotate(45deg);
 }
 
 .shopping-cart {
